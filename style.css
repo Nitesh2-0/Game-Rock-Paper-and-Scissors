@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+h1{
+    background-color: #081b31;
+    color:white; 
+    height:5rem;
+    line-height: 5rem;
+}
+
+.choises{
+    width: 100%;
+    display: flex;
+    gap: 10rem;
+    text-align: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.choice{
+    font-size: 100px;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#rock{
+    background-color: #5db4b3;
+    filter: blur(1px);
+}
+#rock:hover{
+    background-color: #035654;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 2s;
+    filter:brightness(100%);
+}
+
+#paper{
+    background-color: #747372;
+    filter: blur(1px);
+}
+#paper:hover{
+    background-color: rgb(4, 4, 6);
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 2s;
+    filter:brightness(100%);
+}
+
+#scissors{
+    background-color: #7c6030;
+    filter: blur(1px);
+}
+#scissors:hover{
+    background-color: #9e6604;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 2s;
+    filter:brightness(100%);
+}
+
+.scoreBoard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin-top: 5rem;
+    gap: 10rem;
+}
+
+#user-score,#comp-score{
+    background-color: #fff;
+}
+
+.msg-container{
+    margin-top: 5rem;
+}
+
+#msg{
+    background-color: black;
+    color: #fff;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+    flex-wrap: wrap;
+}
